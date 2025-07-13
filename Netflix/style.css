@@ -7,6 +7,9 @@ h1{
     font-size: 40px;
     margin-bottom: 15px;
 }
+body{
+    background-color: black;
+}
 
 .maincont {
     position: relative;
@@ -133,11 +136,12 @@ h1{
 
 
 
-.container2 .box1{
-    height: 60vh;
+.container2 .box1,.container2 .box3{
+    height: max(60vh,350px);
     width: 100vw;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -150,17 +154,17 @@ h1{
     margin: 0px 25px;
     width: 40vw;
 }
-.container2 .box1 .vidimg{
+.container2 .box1 .vidimg,.container2 .box3 .vidimg{
     width: 40vw;
     position: relative;
 }
-.container2 .box1 .vidimg img{
+.container2 .box1 .vidimg img,.container2 .box3 .vidimg img{
     height: 30vw;
     position: relative;
     top: 0;
     z-index: 1;
 }
-.container2 .box1 .vidimg video{
+.container2 .box1 .vidimg video,.container2 .box3 .vidimg video{
     height: 16vw;
     position: absolute;
     top: 21%;
@@ -168,8 +172,8 @@ h1{
     right: 0%;
 }
 
-.container2 .box2{
-    height: 60vh;
+.container2 .box2,.container2 .box4{
+    height: max(60vh,350px);
     width: 100vw;
     background-color: black;
     display: flex;
@@ -179,6 +183,21 @@ h1{
     border-bottom: 5px solid grey;
 }
 
-.container2 .box2 .imag img{
+.container2 .box2 .imag img,.container2 .box4 .imag img{
     height: min(320px,42vw);
+}
+
+.container2 .box3 .vidimg img{
+    height: 27vw;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    margin-top: 0;
+}
+.container2 .box3 .vidimg video{
+    height: 13vw;
+    position: absolute;
+    top: 9%;
+    left: 16.2%;
+    right: 0%;
 }
