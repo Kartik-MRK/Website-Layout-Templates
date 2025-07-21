@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     font-family:'sans-serif','Segoe UI', Tahoma, Geneva, Verdana;
+    color: white;
+}
+:root{
+    --seccolor: rgb(52, 51, 51);
 }
 h1{
     font-size: 40px;
@@ -9,6 +13,8 @@ h1{
 }
 body{
     background-color: black;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .maincont {
@@ -20,7 +26,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px,100vw);
-    border-bottom: 5px solid rgb(134, 134, 134);
+    border-bottom: 5px solid var(--seccolor);
 }
 
 .opacbox {
@@ -146,7 +152,7 @@ body{
     align-items: center;
     position: relative;
     overflow: hidden;
-    border-bottom: 5px solid grey;
+    border-bottom: 5px solid var(--seccolor);
 }
 .container2 .txt{
     color: white;
@@ -165,10 +171,10 @@ body{
     z-index: 1;
 }
 .container2 .box1 .vidimg video,.container2 .box3 .vidimg video{
-    height: 16vw;
+    height: 16.7vw;
     position: absolute;
-    top: 21%;
-    left: 14%;
+    top: 20%;
+    left: 13%;
     right: 0%;
 }
 
@@ -180,7 +186,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-bottom: 5px solid grey;
+    border-bottom: 5px solid var(--seccolor);
 }
 
 .container2 .box2 .imag img,.container2 .box4 .imag img{
@@ -201,3 +207,85 @@ body{
     left: 16.2%;
     right: 0%;
 }
+
+
+.freqaskedq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 5px solid var(--seccolor);
+    color: white;
+}
+
+.freqaskedq h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.freqaskedq .ques{
+    height: 55px;
+    width: 70vw;
+    background-color:var(--seccolor);
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    font-size: 20px;
+    transition: background-color .4s 0s ease-in-out;
+    cursor: pointer;
+}
+
+.freqaskedq .ques:last-child{
+    margin-bottom: 50px;
+
+}
+
+.freqaskedq .ques:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.footer {
+    display: flex;
+    width: 85vw;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.footer .box{
+    width: 18vw;
+    /* padding: 15px; */
+    color: rgb(180, 180, 180);
+    /* border: 2px solid; */
+}
+
+.footer .box p{
+    line-height: 45px;
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+    
+}
+.footer .box a{
+    color: rgb(180, 180, 180);
+}
+
+footer .contact{
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 13vw;
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+}
+
+footer{
+    padding-bottom: 45px;
+}
+
+.footer .box p:nth-child(5){
+    padding-top: 20px;
+    font-size: 16px;
+}
+
