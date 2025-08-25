@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'sans-serif','Segoe UI', Tahoma, Geneva, Verdana;
+    color: white;
+}
+:root{
+    --seccolor: rgb(52, 51, 51);
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.maincont {
+    position: relative;
+    top: 0;
+    height: max(70vh,360px);
+    width: 100vw;
+    background-image: url("assets/images/netflix_bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    border-bottom: 5px solid var(--seccolor);
+}
+
+.opacbox {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .54;
+    
+}
+
+.nav .logo {
+    height: 30px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.nav .logo:hover{
+    transition: transform .4s 0s ease-out;
+    transform: scale(1.1);
+}
+.nav{
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    /* gap: 250px; */
+}
+.content .signin{
+    color: white;
+    background-color: rgb(255, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 12px;
+    height: 23px;
+    cursor: pointer;
+
+}
+
+.content .signin:hover{
+
+    background-color: rgb(232, 0, 0);
+}
+
+.right-nav{
+    display: flex;
+    gap: 10px;
+}
+
+.right-nav select{
+    height: 23px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 12px;
+    padding: 0px 5px;
+    cursor: pointer;
+    border: 1.2px solid white;
+    border-radius: 5px;
+}
+
+.right-nav select option{
+    color:rgb(97, 97, 97);
+}
+
+.content .txt{
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.content .txt h1{
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+.content .txt h3{
+    margin-bottom: 10px;
+
+}
+.content .email-box input{
+    background-color: rgba(247, 243, 243, 0);
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 3px;
+    width: 250px;
+    
+}
+.content .email-box{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.content .email-box .getstarted{
+    background-color: rgb(253, 17, 17);
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
+
+}
+
+
+
+.container2 .box1,.container2 .box3{
+    height: max(60vh,350px);
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid var(--seccolor);
+}
+.container2 .txt{
+    color: white;
+    text-align: center;
+    margin: 0px 25px;
+    width: 40vw;
+}
+.container2 .box1 .vidimg,.container2 .box3 .vidimg{
+    width: 40vw;
+    position: relative;
+}
+.container2 .box1 .vidimg img,.container2 .box3 .vidimg img{
+    height: 30vw;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+.container2 .box1 .vidimg video,.container2 .box3 .vidimg video{
+    height: 16.7vw;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    right: 0%;
+}
+
+.container2 .box2,.container2 .box4{
+    height: max(60vh,350px);
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 5px solid var(--seccolor);
+}
+
+.container2 .box2 .imag img,.container2 .box4 .imag img{
+    height: min(320px,42vw);
+}
+
+.container2 .box3 .vidimg img{
+    height: 27vw;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    margin-top: 0;
+}
+.container2 .box3 .vidimg video{
+    height: 13vw;
+    position: absolute;
+    top: 9%;
+    left: 16.2%;
+    right: 0%;
+}
+
+
+.freqaskedq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 5px solid var(--seccolor);
+    color: white;
+}
+
+.freqaskedq h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.freqaskedq .ques{
+    height: 55px;
+    width: 70vw;
+    background-color:var(--seccolor);
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    font-size: 20px;
+    transition: background-color .4s 0s ease-in-out;
+    cursor: pointer;
+}
+
+.freqaskedq .ques:last-child{
+    margin-bottom: 50px;
+
+}
+
+.freqaskedq .ques:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.footer {
+    display: flex;
+    width: 85vw;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.footer .box{
+    width: 18vw;
+    /* padding: 15px; */
+    color: rgb(180, 180, 180);
+    /* border: 2px solid; */
+}
+
+.footer .box p{
+    line-height: 45px;
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+    
+}
+.footer .box a{
+    color: rgb(180, 180, 180);
+}
+
+footer .contact{
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 13vw;
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+}
+
+footer{
+    padding-bottom: 45px;
+}
+
+.footer .box p:nth-child(5){
+    padding-top: 20px;
+    font-size: 16px;
+}
+

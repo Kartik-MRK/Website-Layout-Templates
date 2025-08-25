@@ -1,0 +1,85 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: linear-gradient(90deg, rgba(5, 1, 59, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 189, 227, 1) 100%);
+            height: 75vh;
+            position: relative;
+            /* Important for absolute ball */
+            overflow: hidden;
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            /* Required for offset-path */
+           background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 7%, rgba(87, 199, 133, 1) 46%, rgba(237, 221, 83, 1) 93%);
+
+
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation: bouncex 4s linear infinite alternate-reverse, bouncey1 1s ease-out infinite alternate-reverse;
+        }
+
+        @keyframes bouncex {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100vw;
+            }
+        }
+
+        @keyframes bouncey1 {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 50%
+            }
+        }
+
+        @keyframes bouncey2 {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 60%
+            }
+        }
+
+        @keyframes bouncey3 {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 70%
+            }
+        }
+
+        .bac {
+            background: #833AB4;
+            background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+            height: 25vh;
+        }
+
+        .ball1 {
+            animation: bouncex 7s linear infinite alternate-reverse, bouncey2 1s ease-out infinite alternate-reverse;
+            background: #3d5eff;
+background: linear-gradient(30deg, rgba(61, 94, 255, 1) 0%, rgba(247, 45, 85, 1) 100%);
+        }
+
+        .ball2 {
+            animation: bouncex 3s linear infinite alternate-reverse, bouncey3 1s ease-out infinite alternate-reverse;
+            background: radial-gradient(circle at 40% 40%, #f6d365, #fda085, #c2f0a2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
